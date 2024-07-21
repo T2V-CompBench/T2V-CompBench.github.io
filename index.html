@@ -62,16 +62,12 @@
         <a style="color: steelblue" href="https://github.com/KaiyueSun98/T2V-CompBench" >[Code]</a>
 	  </p>
 	
-<!--     <div style="text-align: center">
-           <img src="./assets/teaser_1.jpg" alt="" width="600px" style="max-width: 100%; height: auto;;" />
-	   <img src="./assets/teaser_2.jpg" alt="" width="600px" style="max-width: 100%; height: auto;;" />
-    </div>   -->
     <div style="text-align: center">
 	    <video width="80%" playsinline="" autoplay="" loop="" preload="" muted=""> <source src="./assets/example_video.mp4" type="video/mp4"> </video>
     </div>
 	
     <p style="text-align: center">
-        <em>T2V-CompBench Properties.</em>
+        <em>T2V-CompBench Prompt Suite.</em>
     </p>
     
     <p class="section">&nbsp;</p>
@@ -81,12 +77,18 @@
         &nbsp;
         <p class="section">&nbsp;</p> 
 
-<!-- 	<p class="move-down">&nbsp;</p> -->
-        <p style="text-align: center;"><span class="section"><b>Abstract</b></span></p>
-        <p style="text-align: justify; display: flex; justify-content: center; max-width: 800px; margin:auto"> 
+
+        <p style="text-align: center;"><span class="section" style="font-size: 1.5em;"><b>Highlight:</b></span></p>
+	<p style="text-align: justify; display: flex; justify-content: center; max-width: 800px; margin: auto; font-size: 1.2em;">
+	    <ul>
+	        ✔️ Conduct the first systematic study on compositional text-to-video generation and propose a benchmark, <b>T2V-CompBench</b>.<br>
+	        ✔️ Evaluate diverse aspects of compositionality with carefully designed metrics, covering <b>7 categories with 700 text prompts</b>.<br>
+		✔️ Propose evaluation metrics specifically designed for compositional T2V generation, verified by human evaluations: <b>MLLM-based evaluation metrics, Detection-based evaluation metrics and Tracking-based evaluation metrics</b>. <br>
+	        ✔️ Benchmark and analyze <b>20 text-to-video generation models</b>, highlighting the significant challenge of compositional text-to-video generation for current models and aiming to guide future research.<br>
+	    </ul>
+	</p>
 	<p class="section">&nbsp;</p>
-        Text-to-video (T2V) generation models have advanced significantly, yet their ability to compose different objects, attributes, actions, and motions into a video remains unexplored. Previous text-to-video benchmarks also neglect this important ability for evaluation. In this work, we conduct the first systematic study on compositional text-to-video generation. We propose T2V-CompBench, the first benchmark tailored for compositional text-to-video generation. T2V-CompBench encompasses diverse aspects of compositionality, including consistent attribute binding, dynamic attribute binding, spatial relationships, motion binding, action binding, object interactions, and generative numeracy. We further carefully design evaluation metrics of MLLM-based metrics, detection-based metrics, and tracking-based metrics, which can better reflect compositional text-to-video generation quality of seven proposed categories with 700 text prompts. The effectiveness of the proposed metrics is verified by correlation with human evaluations. We also benchmark various text-to-video generation models and conduct in-depth analysis across different models and different compositional categories. We find that compositional text-to-video generation is highly challenging for current models, and we hope that our attempt will shed light on future research in this direction.
-        <p class="section">&nbsp;</p>
+	<p class="section">&nbsp;</p>
 	<p class="section"><b>Introduction</b></p>
         <div style="text-align: center">
 	    <video width="80%" playsinline="" autoplay="" loop="" preload="" muted=""> <source src="./assets/T2I-CompBench_PPT for github demo_0709.mp4" type="video/mp4"> </video>
@@ -94,14 +96,14 @@
 	<p class="section">&nbsp;</p>
 
 	    
-        <p class="section"><b>Evaluation</b></p>
+        <p class="section"><b>Evaluation Metrics</b></p>
         <div style="text-align: center">
             <img src="./assets/2-0.jpg" alt="" style="max-width: 100%; height: auto;" />
         </div>
         </br>
         <p style="text-align: center">
-            <em>BLIP-VQA for attribute binding evaluation, UniDet for spatial relationship evaluation, 
-		and MiniGPT4-CoT as a potential unified metric.</em>
+            <em>MLLM-based evaluation metrics for consistent and dynamic attribute binding, action binding and object interactions. Detection-based evaluation metrics for spatial relationships and object interactions. Tracking-based evaluation metrics for motion binding.
+		Tracking-based evaluation metrics for motion binding.</em>
         </p>
         
         <p class="section">&nbsp;</p>
@@ -133,11 +135,32 @@
                         </table>
                     </div>
 
-                    <div class="carousel-item">
+			<div class="carousel-item">
+			    <table width="800px" align="center">
+			        <tbody>
+			            <tr>
+			                <th>
+			                    <video width="800" controls>
+			                        <source src="./assets/eval_3_video.mp4" type="video/mp4">
+			                        Your browser does not support the video tag.
+			                    </video>
+			                </th>
+			            </tr>
+			        </tbody>
+			    </table>
+			</div>
+
+
+		
+
+			
+
+			
+		    <div class="carousel-item">
                         <table width="800px" align="center">
                             <tbody>
                                 <tr>
-                                    <th><img src="./assets/2-3.PNG" alt="" width="800px" style="max-width: 100%; height="400px";" /></th>
+                                    <th><img src="./assets/eval_5.jpg" alt="" width="800px" style="max-width: 100%; height="400px";" /></th>
                                 </tr>
                             </tbody>
                         </table>
@@ -159,19 +182,6 @@
 			    </table>
 			</div>
 
-			
-
-			
-		    <div class="carousel-item">
-                        <table width="800px" align="center">
-                            <tbody>
-                                <tr>
-                                    <th><img src="./assets/eval_5.jpg" alt="" width="800px" style="max-width: 100%; height="400px";" /></th>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
 	            <div class="carousel-item">
                         <table width="800px" align="center">
                             <tbody>
@@ -182,25 +192,22 @@
                         </table>
                     </div>
 
-		    <div class="carousel-item">
-                        <table width="800px" align="center">
-                            <tbody>
-                                <tr>
-                                    <th><img src="./assets/2-7.PNG" alt="" width="800px" style="max-width: 100%; height="400px";" /></th>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+			<div class="carousel-item">
+			    <table width="800px" align="center">
+			        <tbody>
+			            <tr>
+			                <th>
+			                    <video width="800" controls>
+			                        <source src="./assets/eval_9_video.mp4" type="video/mp4">
+			                        Your browser does not support the video tag.
+			                    </video>
+			                </th>
+			            </tr>
+			        </tbody>
+			    </table>
+			</div>
 
-		    <div class="carousel-item">
-                        <table width="800px" align="center">
-                            <tbody>
-                                <tr>
-                                    <th><img src="./assets/2-8.PNG" alt="" width="800px" style="max-width: 100%; height="400px";" /></th>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+
 			
 
                 </div>
@@ -339,12 +346,7 @@
                     border-radius: 20px;
                     ">
 
-    @article{huang2023t2icompbench,
-        title={T2I-CompBench: A Comprehensive Benchmark for Open-world Compositional Text-to-image Generation},
-        author={Kaiyi Huang and Kaiyue Sun and Enze Xie and Zhenguo Li and Xihui Liu},
-        journal={arXiv preprint arXiv: 2307.06350},
-        year={2023}
-    }       
+   
 
 			    </pre>
             </tbody>
