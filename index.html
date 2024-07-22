@@ -73,15 +73,15 @@
     <p class="section">&nbsp;</p>
 
      <div class="container">
-
-        &nbsp;
+<!-- 
+        &nbsp; -->
 
         <p style="text-align: center;"><span class="section" style="font-size: 1.5em;"><b>Highlight:</b></span></p>
 	<p style="text-align: justify; display: flex; justify-content: center; max-width: 800px; margin: auto; font-size: 1.2em;">
 	    <ul>
 	        ✔️ Conduct the first systematic study on compositional text-to-video generation and propose a benchmark, <b>T2V-CompBench</b>.<br>
 	        ✔️ Evaluate diverse aspects of compositionality with carefully designed metrics, covering <b>7 categories with 700 text prompts</b>.<br>
-		✔️ Propose evaluation metrics specifically designed for compositional T2V generation, verified by human evaluations: <b>MLLM-based evaluation metrics, Detection-based evaluation metrics and Tracking-based evaluation metrics</b>. <br>
+		✔️ Propose evaluation metrics specifically designed for compositional T2V generation, verified by human evaluations: <b>MLLM-based evaluation metrics, Detection-based evaluation metrics</b> and <b>Tracking-based evaluation metrics</b>. <br>
 	        ✔️ Benchmark and analyze <b>20 text-to-video generation models</b>, highlighting the significant challenge of compositional text-to-video generation for current models and aiming to guide future research.<br>
 	    </ul>
 	</p>
@@ -95,7 +95,8 @@
         </div>
         </br>
         <p style="text-align: center">
-            <em>MLLM-based evaluation metrics for consistent and dynamic attribute binding, action binding and object interactions. Detection-based evaluation metrics for spatial relationships and object interactions. Tracking-based evaluation metrics for motion binding.
+            <em>MLLM-based evaluation metrics for consistent and dynamic attribute binding, action binding and object interactions. <br>
+		Detection-based evaluation metrics for spatial relationships and object interactions. <br>
 		Tracking-based evaluation metrics for motion binding.</em>
         </p>
         
@@ -128,18 +129,13 @@
                         </table>
                     </div>
 
-			<div class="carousel-item" data-interval="6500">
+			<div class="carousel-item" data-interval="6000">
 			    <table width="800px" align="center">
-			        <tbody>
-			            <tr>
-			                <th>
-			                    <video width="800" controls>
-			                        <source src="./assets/eval_3_video.mp4" type="video/mp4">
-			                        Your browser does not support the video tag.
-			                    </video>
-			                </th>
-			            </tr>
-			        </tbody>
+			        <div style="text-align: center">
+					  <video width="80%" playsinline="" autoplay="" loop="" preload="" muted=""> 
+					  <source src="./assets/eval_3_video.mp4" type="video/mp4"> 
+					  </video>
+		    		</div>
 			    </table>
 			</div>
 			
@@ -154,7 +150,7 @@
                     </div>
 
 
-			<div class="carousel-item" data-interval="17000">
+			<div class="carousel-item" data-interval="18000">
 			    <table width="800px" align="center">
 				    
 				    <div style="text-align: center">
@@ -177,18 +173,13 @@
                         </table>
                     </div>
 
-			<div class="carousel-item" data-interval="6500">
+			<div class="carousel-item" data-interval="7000">
 			    <table width="800px" align="center">
-			        <tbody>
-			            <tr>
-			                <th>
-			                    <video width="800" controls>
-			                        <source src="./assets/eval_9_video.mp4" type="video/mp4">
-			                        Your browser does not support the video tag.
-			                    </video>
-			                </th>
-			            </tr>
-			        </tbody>
+			        <div style="text-align: center">
+					  <video width="80%" playsinline="" autoplay="" loop="" preload="" muted=""> 
+					  <source src="./assets/eval_9_video.mp4" type="video/mp4"> 
+					  </video>
+		    		</div>
 			    </table>
 			</div>
 
@@ -229,7 +220,7 @@
 		   </p>
 		   <img src="./assets/evaluation_results.png" alt="" width="1000px" style="max-width: 150%; height: auto;;" />
 		   <p style="text-align: center">
-		      <em>T2V-CompBench evaluation results with proposed metrics for 20 T2V generation models (13 open-source models and 7 commercial models).</em>
+		      <em>T2V-CompBench evaluation results with proposed metrics for 20 T2V generation models (13 open-source models and 7 commercial models).</em> <br>
 		    	Bold stands for the best score, 
 		        red indicates the best score across 7 commercial models, 
 		        yellow indicates the best score across 13 open-sourced models.
